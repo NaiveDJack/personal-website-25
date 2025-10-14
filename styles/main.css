@@ -1,0 +1,168 @@
+html {
+  display: flex;
+  flex-direction: column;
+}
+
+@font-face {
+  font-family: 'Cinzel';
+  src: url('../assets/fonts/Cinzel/Cinzel-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Crimson';
+  src: url('../assets/fonts/Crimson_Text/CrimsonText-Regular.ttf') format('truetype');
+}
+
+/* FIRST LEVEL ITEMS */
+
+body {
+  background: url("../assets/pexels-maps.jpg") no-repeat fixed center;
+  display: grid;
+  columns: auto;
+  gap: 20px;
+}
+
+/* SECOND LEVEL ITEMS */
+
+#header {
+  display: inline-grid;
+  grid-template-columns: 5% 45% auto 50%;
+  grid-auto-flow: row;
+  align-items: center;
+  background: #fff1c2;
+  margin: 24px 24px 0 24px;
+}
+
+#stats {
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 8px;
+  padding: 4px 8px;
+}
+
+#stats > i {
+  font-family: Cinzel;
+  font-size: 10pt;
+}
+
+#stats > p {
+  font-family: Crimson;
+  font-size: 14pt;
+}
+
+#nav {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  align-items: center;
+  justify-items: space-around;
+  gap: 4px;
+  background: #fff1c2;
+  margin: auto;
+  font-family: Cinzel;
+}
+
+#nav > .vline {
+  height: 60%;
+}
+
+#main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#footer {
+  display: flex;
+  flex-basis: 10%;
+  flex-direction: row;
+  background: #fff1c2;
+  padding: 12px;
+  margin: 0 24px 24px 24px;
+}
+
+#textbox {
+  background: fixed #F0F0F0;
+  border: #000000 inset;
+  padding: 8px;
+  margin: 0;
+  font-style: italic;
+}
+
+/* CLASSES */
+
+.card {
+  display: flex;
+  flex-basis: 24%;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 8px;
+  background: #fff1c2;
+  border-style: solid;
+  border-width: 4px;
+  border-radius: 3px;
+  padding: 8px;
+}
+
+.digisoc {
+  border-color: #1958B7;
+}
+
+.digisoc > h2 {
+  color: #1958B7;
+}
+
+.activist {
+  border-color: #B90C0C;
+}
+
+.activist > h2 {
+  color: #B90C0C;
+}
+
+.storyteller {
+  border-color: #BEAA10;
+}
+
+.storyteller > h2 {
+  color: #BEAA10;
+}
+
+.vline {
+  border: 1px solid black;
+  height: 100%;
+}
+
+.tertiary {
+  padding: 8px;
+}
+
+/* CHARACTERS */
+
+h1 {
+  font-size: 48pt;
+  font-family: Cinzel, serif;
+  text-align: left;
+  padding: 20px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 24pt;
+  font-family: Cinzel, serif;
+  font-weight: bold;
+  text-align: left;
+  margin: 0;
+  padding: 8px;
+}
+
+i {
+  font-size: 10pt;
+  font-family: Crimson, serif;
+}
+
+p {
+  font-size: 12pt;
+  font-family: Crimson, serif;
+  margin: 0;
+}
+
