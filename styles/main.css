@@ -19,6 +19,7 @@ body {
   background: url("../assets/img/pexels-maps.jpg") no-repeat fixed center;
   display: grid;
   columns: auto;
+  height: 100vh;
   gap: 20px;
 }
 
@@ -69,6 +70,37 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+
+.card {
+  display: flex;
+  flex-basis: 24%;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 8px;
+  background: #fff1c2;
+  border-style: solid;
+  border-width: 4px;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.card.digisoc:hover {
+  filter: drop-shadow(4px 4px 4px #195887);
+  transform: scale(1.1);
+  transform: rotate(-3deg);
+}
+
+.card.activist:hover {
+  filter: drop-shadow(4px 4px 4px #B90C0C);
+  transform: scale(1.1);
+  transform: rotate(-5deg);
+}
+
+.card.storyteller:hover {
+  filter: drop-shadow(4px 4px 4px #beaa10);
+  transform: scale(1.1);
+  transform: rotate(5deg);
 }
 
 #footer {
@@ -127,19 +159,6 @@ body {
 }
 
 /* CLASSES */
-
-.card {
-  display: flex;
-  flex-basis: 24%;
-  flex-direction: column;
-  justify-content: space-around;
-  gap: 8px;
-  background: #fff1c2;
-  border-style: solid;
-  border-width: 4px;
-  border-radius: 8px;
-  padding: 8px;
-}
 
 .digisoc {
   border-color: #1958B7;
