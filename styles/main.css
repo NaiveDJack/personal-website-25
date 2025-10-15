@@ -121,6 +121,17 @@ a:link, a:visited {
   transform: rotate(5deg);
 }
 
+#file {
+  background-color: #fff1c2;
+  padding: 8px;
+  border-style: solid;
+  border-width: 4px;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-auto-flow: row;
+}
+
 #footer {
   display: flex;
   flex-basis: 10%;
@@ -145,6 +156,13 @@ a:link, a:visited {
   justify-content: space-between;
 }
 
+#file_header {
+  display: flex;
+  flex-direction: row !important;
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 2;
+}
+
 #card_header > .digisoc {
   color: #1958B7;
 }
@@ -157,15 +175,32 @@ a:link, a:visited {
   color: #BEAA10;
 }
 
+#file > div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
 .img_container {
   display: flex;
   justify-content: center;
   align-self: center;
   width: 450px;
   height: 450px;
+  margin: auto;
   overflow: hidden;
   background-size: cover;
   background-position: center;
+  grid-column: 2;
+}
+
+#spells {
+  grid-row: 2 / span 1;
+  height: 100%;
+  padding-left: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 #textbox {
@@ -175,6 +210,8 @@ a:link, a:visited {
   padding: 8px;
   margin: 0;
   font-style: italic;
+  grid-row: 3 / span 1;
+  grid-column: 1 / span 2;
 }
 
 /* CLASSES */
@@ -223,7 +260,32 @@ a:link, a:visited {
   height: 100%;
 }
 
+.skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px;
+  row-gap: 8px;
+}
+
 /* BUTTONS */
+
+.primary {
+  font-family: Cinzel, serif;
+  font-size: 24pt;
+  font-weight: bold;
+  color: #F0F0F0;
+  border-radius: 20px;
+  padding: 8px;
+  margin: 12px;
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+}
+
+.activist.primary {
+  background-color: #B90C0C;
+}
 
 .tertiary {
   padding: 8px;
@@ -248,6 +310,14 @@ h2 {
   padding: 8px;
 }
 
+h3 {
+  font-size: 16pt;
+  font-family: Cinzel, serif;
+  font-weight: bold;
+  font-style: normal;
+  margin: 0;
+}
+
 i {
   font-size: 10pt;
   font-family: Crimson, serif;
@@ -257,5 +327,11 @@ p {
   font-size: 12pt;
   font-family: Crimson, serif;
   margin: 0;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  padding-left: 40px;
 }
 
