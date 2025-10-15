@@ -16,7 +16,7 @@ html {
 /* FIRST LEVEL ITEMS */
 
 body {
-  background: url("../assets/pexels-maps.jpg") no-repeat fixed center;
+  background: url("../assets/img/pexels-maps.jpg") no-repeat fixed center;
   display: grid;
   columns: auto;
   gap: 20px;
@@ -87,7 +87,7 @@ body {
   text-align: center;
 }
 
-/* TERTIARY */
+/* THIRD LEVEL ITEMS */
 
 #card_header {
   display: flex;
@@ -105,6 +105,17 @@ body {
 
 #card_header > .storyteller {
   color: #BEAA10;
+}
+
+.img_container {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 450px;
+  height: 450px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
 }
 
 #textbox {
