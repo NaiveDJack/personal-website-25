@@ -74,10 +74,30 @@ body {
 #footer {
   display: flex;
   flex-basis: 10%;
-  flex-direction: row;
+  flex-direction: column;
   background: #fff1c2;
   padding: 12px;
   margin: 0 24px 24px 24px;
+}
+
+/* TERTIARY */
+
+#card_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#card_header > .digisoc {
+  color: #1958B7;
+}
+
+#card_header > .activist {
+  color: #B90C0C;
+}
+
+#card_header > .storyteller {
+  color: #BEAA10;
 }
 
 #textbox {
@@ -99,7 +119,7 @@ body {
   background: #fff1c2;
   border-style: solid;
   border-width: 4px;
-  border-radius: 3px;
+  border-radius: 8px;
   padding: 8px;
 }
 
@@ -111,12 +131,22 @@ body {
   color: #1958B7;
 }
 
+.digisoc > .vline {
+  border-color: #1958B7;
+  height: 0px;
+}
+
 .activist {
   border-color: #B90C0C;
 }
 
 .activist > h2 {
   color: #B90C0C;
+}
+
+.activist > .vline {
+  border-color: #B90C0C;
+  height: 0px;
 }
 
 .storyteller {
@@ -127,10 +157,17 @@ body {
   color: #BEAA10;
 }
 
+.storyteller > .vline {
+  border-color: #BEAA10;
+  height: 0px;
+}
+
 .vline {
   border: 1px solid black;
   height: 100%;
 }
+
+/* BUTTONS */
 
 .tertiary {
   padding: 8px;
