@@ -153,6 +153,7 @@ body {
 #textbox {
   background: fixed #F0F0F0;
   border: #000000 inset;
+  min-height: 40px;
   padding: 8px;
   margin: 0;
   font-style: italic;
