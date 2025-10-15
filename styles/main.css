@@ -75,9 +75,16 @@ body {
   display: flex;
   flex-basis: 10%;
   flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
   background: #fff1c2;
   padding: 12px;
   margin: 0 24px 24px 24px;
+}
+
+#footer > p {
+  margin: 0;
+  text-align: center;
 }
 
 /* TERTIARY */
