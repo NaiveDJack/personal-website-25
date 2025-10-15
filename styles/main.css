@@ -23,6 +23,11 @@ body {
   gap: 20px;
 }
 
+a:link, a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* SECOND LEVEL ITEMS */
 
 #header {
@@ -72,6 +77,19 @@ body {
   justify-content: space-around;
 }
 
+#main > a {
+  display: flex;
+  flex-basis: 24%;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 8px;
+  background: #fff1c2;
+  border-style: solid;
+  border-width: 4px;
+  border-radius: 8px;
+  padding: 8px;
+}
+
 .card {
   display: flex;
   flex-basis: 24%;
@@ -85,19 +103,19 @@ body {
   padding: 8px;
 }
 
-.card.digisoc:hover {
+#main > a.digisoc:hover {
   filter: drop-shadow(4px 4px 4px #195887);
   transform: scale(1.1);
   transform: rotate(-3deg);
 }
 
-.card.activist:hover {
+#main > a.activist:hover {
   filter: drop-shadow(4px 4px 4px #B90C0C);
   transform: scale(1.1);
   transform: rotate(-5deg);
 }
 
-.card.storyteller:hover {
+#main > a.storyteller:hover {
   filter: drop-shadow(4px 4px 4px #beaa10);
   transform: scale(1.1);
   transform: rotate(5deg);
