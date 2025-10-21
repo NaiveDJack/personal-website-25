@@ -197,7 +197,7 @@ a:link, a:visited {
 #spells {
   grid-row: 2 / span 1;
   height: 100%;
-  padding-left: 8px;
+  padding: 8px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -208,6 +208,12 @@ a:link, a:visited {
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+
+#card_side_column > a {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
 
 #textbox {
