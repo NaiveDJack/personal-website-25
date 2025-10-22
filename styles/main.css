@@ -181,19 +181,6 @@ a:link, a:visited {
   gap: 8px;
 }
 
-.img_container {
-  display: flex;
-  justify-content: center;
-  align-self: center;
-  width: 450px;
-  height: 450px;
-  margin: auto;
-  overflow: hidden;
-  background-size: cover;
-  background-position: center;
-  grid-column: 2;
-}
-
 #spells {
   grid-row: 2 / span 1;
   height: 100%;
@@ -279,6 +266,21 @@ a:link, a:visited {
   flex-wrap: wrap;
   gap: 8px;
   row-gap: 8px;
+}
+
+.img_container {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 450px;
+  height: 450px;
+  margin: auto;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  grid-column: 2;
 }
 
 /* BUTTONS */
