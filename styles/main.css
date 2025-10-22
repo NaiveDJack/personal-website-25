@@ -175,19 +175,12 @@ a:link, a:visited {
   color: #BEAA10;
 }
 
-#file > div {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
 #spells {
   grid-row: 2 / span 1;
   height: 100%;
   padding: 8px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   gap: 32px !important;
 }
 
@@ -264,7 +257,7 @@ a:link, a:visited {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 12px;
   row-gap: 8px;
 }
 
@@ -303,6 +296,14 @@ a:link, a:visited {
   background-color: #B90C0C;
 }
 
+.digisoc.primary {
+  background-color: #1958B7;
+}
+
+.storyteller.primary {
+  background-color: #BEAA10;
+}
+
 .tertiary {
   padding: 8px;
 }
@@ -335,11 +336,11 @@ h3 {
 }
 
 h4 {
-  font-size: 10pt;
+  font-size: 12pt;
   font-family: Crimson, serif;
   font-style: normal;
   margin: 0;
-  padding: 8px 4px;
+  padding: 8px;
   border: 1px solid black;
   border-radius: 8px;
   background-color: white;
