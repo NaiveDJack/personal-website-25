@@ -31,6 +31,7 @@ a:link, a:visited {
 /* SECOND LEVEL ITEMS */
 
 #header {
+  height: fit-content;
   display: inline-grid;
   grid-template-columns: 5% 45% auto 50%;
   grid-auto-flow: row;
@@ -117,10 +118,12 @@ a:link, a:visited {
   border-radius: 8px;
   display: flex;
   flex-direction: column;
-  max-width: 50%;
+  max-width: 90%;
+  height: fit-content;
 }
 
 #footer {
+  height: fit-content;
   display: flex;
   flex-basis: 10%;
   flex-direction: column;
