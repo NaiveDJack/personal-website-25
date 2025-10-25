@@ -13,4 +13,75 @@
   <meta name="apple-mobile-web-app-title" content="MyWebSite" />
   <link rel="manifest" href="/site.webmanifest" />
 <body>
-<body></body>
+    <header id="header">
+    <div id="logo"> <a href="index.html"> <img src="./favicon/favicon-96x96.png"></a> </div>
+    <h1>Daniele Latella</h1>
+    <div class="vline"></div>
+    <div id="stats">
+      <i>Class</i>
+      <i>Level</i>
+      <p>Wizard, Bard, Battle Master</p>
+      <p>Bachelor</p>
+      <i>Race</i>
+      <i>Alignment</i>
+      <p>Human</p>
+      <p>Chaotic good</p>
+    </div>
+  </header>
+  
+  <main id="main">
+    <form action="mailto:daniele.latella@pm.me" method="post" enctype="text/plain" class="card">
+      <h2>Summoning form</h2>
+      <p>Feel free to contact me for inquiries or collaborations</p>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="10" cols="30" required></textarea>
+      <input type="submit" value="Send">
+      <input type="reset" value="Reset">
+    </form>
+
+    <div class="card" style="height: fit-content;">
+      <h2>Social networks</h2>
+      
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/danielelatella/">
+          <img src="./assets/icons/linkedin.png" width="24" height="24">
+          Professional network
+        </a>
+        <a href="https://github.com/naivedjack">
+          <img src="./assets/icons/github.png" width="24" height="24">
+          Code repository
+        </a>
+        <a href="https://bsky.app/profile/naivedjack.bsky.social">
+          <img src="./assets/icons/bluesky.png" width="24" height="24">
+          Microblog
+        </a>
+        <a href="https://www.youtube.com/@NaiveDJack">
+          <img src="./assets/icons/youtube.png" width="24" height="24">
+          Videos
+        </a>
+        <i style="align-self: flex-end; justify-self: flex-end;">
+          Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from 
+          <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+        </i>
+      </div>
+
+    </div>
+
+  </main>
+  
+  <footer id="footer">
+    <p>
+      A rare multi-class character who has mastered the arts of Digital Sociology, Activism, and Storytelling.
+      Known to traverse between the digital realm, the battlefield of social justice, and the ethereal plane of narrative creation.
+    </p>
+    <nav id ="nav">
+      <a class="tertiary" href="https://naivedjack.wordpress.com/">Blog</a>
+      <div class="vline"></div>
+      <a class="tertiary" href="./contact.html">Contact</a>
+     </nav>
+  </footer>
+</body>
