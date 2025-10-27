@@ -13,10 +13,10 @@ html {
   src: url('../assets/fonts/Crimson_Text/CrimsonText-Regular.ttf') format('truetype');
 }
 
-/* FIRST LEVEL ITEMS */
+/* FIRST LEVEL ELEMENTS */
 
 body {
-  background: url("../assets/img/pexels-maps.jpg") no-repeat fixed center;
+  background: url("../assets/img/pexels-maps.jpg") repeat-y center;
   display: grid;
   columns: auto;
   height: 100vh;
@@ -28,7 +28,7 @@ a:link, a:visited {
   color: black;
 }
 
-/* SECOND LEVEL ITEMS */
+/* SECOND LEVEL ELEMENTS */
 
 #header {
   height: fit-content;
@@ -45,16 +45,6 @@ a:link, a:visited {
   grid-template-columns: auto auto;
   row-gap: 8px;
   padding: 4px 8px;
-}
-
-#stats > i {
-  font-family: Cinzel;
-  font-size: 10pt;
-}
-
-#stats > p {
-  font-family: Crimson;
-  font-size: 14pt;
 }
 
 #nav {
@@ -77,20 +67,8 @@ a:link, a:visited {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-}
-
-.card {
-  height: fit-content;
-  width: fit-content;
-  display: flex;
-  flex-basis: 24%;
-  flex-direction: column;
-  gap: 8px;
-  background: #fff1c2;
-  border-style: solid;
-  border-width: 4px;
-  border-radius: 8px;
-  padding: 8px;
+  row-gap: 24px;
+  align-items: stretch;
 }
 
 #main > a.digisoc:hover {
@@ -140,7 +118,7 @@ a:link, a:visited {
   text-align: center;
 }
 
-/* THIRD LEVEL ITEMS */
+/* THIRD LEVEL ELEMENTS */
 
 #card_header {
   display: flex;
@@ -180,22 +158,21 @@ a:link, a:visited {
   gap: 8px;
 }
 
-#textbox {
-  background: fixed #F0F0F0;
-  border: #000000 inset;
-  padding: 20px;
-  margin: 8px;
-  font-style: italic;
+ul {
+  display: block;
+  list-style-type: disc;
+  padding-left: 40px;
 }
+
+ul > li {
+  padding: 4px;
+}
+
 
 /* CLASSES */
 
 .digisoc {
   border-color: #1958B7;
-}
-
-.digisoc > h2 {
-  color: #1958B7;
 }
 
 .digisoc > .vline {
@@ -206,20 +183,12 @@ a:link, a:visited {
   border-color: #B90C0C;
 }
 
-.activist > h2 {
-  color: #B90C0C;
-}
-
 .activist > .vline {
   border-color: #B90C0C;
 }
 
 .storyteller {
   border-color: #BEAA10;
-}
-
-.storyteller > h2 {
-  color: #BEAA10;
 }
 
 .storyteller > .vline {
@@ -239,6 +208,21 @@ a:link, a:visited {
   row-gap: 8px;
 }
 
+.card {
+  height: fit-content;
+  width: fit-content;
+  max-width: fit-content;
+  display: flex;
+  flex-basis: 24%;
+  flex-direction: column;
+  gap: 8px;
+  background: #fff1c2;
+  border-style: solid;
+  border-width: 4px;
+  border-radius: 8px;
+  padding: 8px;
+}
+
 .img_container {
   display: flex;
   justify-content: center;
@@ -252,6 +236,15 @@ a:link, a:visited {
   background-repeat: no-repeat;
   background-origin: border-box;
   grid-column: 2;
+}
+
+.textbox {
+  background: fixed #F0F0F0;
+  border: #000000 inset;
+  padding: 20px;
+  margin: 8px;
+  font-style: italic;
+  min-height: 50px;
 }
 
 .socials {
@@ -321,6 +314,18 @@ h2 {
   padding: 8px;
 }
 
+.digisoc > h2 {
+  color: #1958B7;
+}
+
+.activist > h2 {
+  color: #B90C0C;
+}
+
+.storyteller > h2 {
+  color: #BEAA10;
+}
+
 h3 {
   font-size: 16pt;
   font-family: Cinzel, serif;
@@ -340,9 +345,20 @@ h4 {
   background-color: white;
 }
 
-i {
+.card > i {
   font-size: 10pt;
   font-family: Crimson, serif;
+  padding: 0 8px 0 8px;
+}
+
+#stats > i {
+  font-family: Cinzel;
+  font-size: 10pt;
+}
+
+#stats > p {
+  font-family: Crimson;
+  font-size: 14pt;
 }
 
 p {
@@ -351,11 +367,7 @@ p {
   margin: 0;
 }
 
-ul {
-  display: block;
-  list-style-type: disc;
-  padding-left: 40px;
-}
+/* MEDIA QUERIES */
 
 @media (max-width: 800px) {
   #stats {
@@ -364,6 +376,11 @@ ul {
 
   #header {
     grid-template-columns: min-content 1fr;
-}
+  }
+
+  .img_container {
+    width: 300px;
+    height: 300px;
+  }
 }
 
