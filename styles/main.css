@@ -58,7 +58,7 @@ a:link, a:visited {
   font-family: Cinzel;
 }
 
-#nav > .vline {
+#nav > .hline {
   height: 60%;
 }
 
@@ -99,6 +99,18 @@ a:link, a:visited {
   flex-direction: column;
   max-width: 90%;
   height: fit-content;
+}
+
+form {
+  min-width: fit-content;
+  display: none !important;
+}
+
+form > .primary {
+  background-color: black;
+  padding: 8px 16px;
+  border: none;
+  align-self: flex-end;
 }
 
 #footer {
@@ -175,7 +187,7 @@ ul > li {
   border-color: #1958B7;
 }
 
-.digisoc > .vline {
+.digisoc > .hline {
   border-color: #1958B7;
 }
 
@@ -183,7 +195,7 @@ ul > li {
   border-color: #B90C0C;
 }
 
-.activist > .vline {
+.activist > .hline {
   border-color: #B90C0C;
 }
 
@@ -191,13 +203,13 @@ ul > li {
   border-color: #BEAA10;
 }
 
-.storyteller > .vline {
+.storyteller > .hline {
   border-color: #BEAA10;
 }
 
-.vline {
+.hline {
   border: 1px solid black;
-  height: 100%;
+  height: 0;
 }
 
 .skills {
@@ -345,7 +357,7 @@ h4 {
   background-color: white;
 }
 
-.card > i {
+.card i {
   font-size: 10pt;
   font-family: Crimson, serif;
   padding: 0 8px 0 8px;

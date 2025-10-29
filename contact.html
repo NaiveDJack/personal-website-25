@@ -29,23 +29,14 @@
   </header>
   
   <main id="main">
-    <form action="mailto:daniele.latella@pm.me" method="post" enctype="text/plain" class="card">
-      <h2>Summoning form</h2>
-      <p>Feel free to contact me for inquiries or collaborations</p>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="10" cols="30" required></textarea>
-      <input type="submit" value="Send">
-      <input type="reset" value="Reset">
-    </form>
-
     <div class="card" style="height: fit-content;">
-      <h2>Social networks</h2>
+      <h2>How to find me</h2>
       
       <div class="socials">
+        <a href="mailto:websiteinquiries@danielelatella.it">
+          <img src="./assets/icons/mail.png" width="24" height="24">
+          Mail
+        </a>
         <a href="https://www.linkedin.com/in/danielelatella/">
           <img src="./assets/icons/linkedin.png" width="24" height="24">
           Professional network
@@ -70,6 +61,24 @@
 
     </div>
 
+    <form action="mailto:daniele.latella@pm.me" method="post" enctype="text/plain" class="card">
+      <h2>Summoning form</h2>
+      <p>Feel free to contact me for inquiries or collaborations</p>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="rpgclass">Required class:</label>
+      <select id="rpgclass" name="rpgclass">
+        <option value="none" selected disabled hidden>Select a class</option>
+        <option value="digisoc">Digital Sociologist</option>
+        <option value="activist">Activist</option>
+        <option value="storyteller">Storyteller</option>
+      </select>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="10" cols="30" required></textarea>
+      <input class="primary" type="submit" value="Send">
+    </form>
   </main>
   
   <footer id="footer">
@@ -79,7 +88,7 @@
     </p>
     <nav id ="nav">
       <a class="tertiary" href="https://naivedjack.wordpress.com/">Blog</a>
-      <div class="vline"></div>
+      <div class="hline"></div>
       <a class="tertiary" href="./contact.html">Contact</a>
      </nav>
   </footer>
